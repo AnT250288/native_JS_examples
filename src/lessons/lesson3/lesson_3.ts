@@ -224,7 +224,7 @@ Promise.resolve(10)
     })*/
 
 
-console.log("start")
+/*console.log("start")
 Promise.resolve(10).then(console.log).then(console.log)
 setInterval(console.log, 1000, "yo")
 Promise.resolve(0).catch(console.log).then(console.log)
@@ -232,7 +232,85 @@ let i = 0;
 while (i < 500000000) {
     i++
 }
+console.log("end")*/
+
+
+//const func = async () => {
+/*async function f() {
+    const responce = await someRequest()
+}*/
+
+
+/*async function f() {
+    console.log("start function code")
+    console.log("end function code")
+}
+
+console.log("start")
+f().then(() => {
+    console.log("Promise")
+});
+console.log("end")*/
+
+
+/*async function f() {
+    console.log("start function code")
+    const response = await new Promise(res => {
+        setTimeout(() => {
+            res("await response")
+        }, 1000)
+    })
+    console.log("response", response)
+    console.log("end function code")
+}
+
+console.log("start")
+f().then(() => {
+    console.log("Promise")
+});
+console.log("end")*/
+
+/*
+async function f() {
+    try {
+        console.log("start function code")
+        const response = await new Promise((res, rej) => {
+            setTimeout(() => {
+                rej("Rejected")
+            }, 1000)
+        })
+        console.log("response", response)
+        console.log("end function code")
+    } catch (e) {
+        console.log("e", e)
+    }
+}
+
+console.log("start")
+f().then(() => {
+    console.log("Promise")
+})
+/!*.catch(err => {
+    console.log("err", err)
+})*!/
 console.log("end")
+*/
+
+
+/*async function f() {
+    console.log("start function code")
+    const response = Promise.resolve("Yo")
+    console.log("response", response)
+    console.log("end function code")
+}
+
+console.log("start")
+f().then(() => {
+    console.log("Promise")
+})
+console.log("end")*/
+
+
 
 
 // setTimeout(console.log, 1000, 5000)
